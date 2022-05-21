@@ -7,7 +7,7 @@ import BlogContext, { ColorMode } from "../../store/store";
 const Header: FunctionComponent = () => {
   const context = useContext(BlogContext);
 
-  const colorModeIcon = context.colorMode === ColorMode.LIGHT ? "💡" : "🌙";
+  const colorModeIcon = context.colorMode === ColorMode.LIGHT ? "🌙" : "💡";
 
   useEffect(() => {
     const rootComponent = document.getElementById("__next");
