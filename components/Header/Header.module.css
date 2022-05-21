@@ -7,8 +7,14 @@
   padding: 1rem 0;
 }
 
-.header__title {
+.header__wrap {
+  align-items: center;
+  display: flex;
   flex: 1;
+  justify-content: space-between;
+}
+
+.header__title {
   margin: 0;
 }
 
@@ -42,5 +48,9 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .header__wrap {
+    width: 100%;
   }
 }

@@ -22,10 +22,12 @@ const Header: FunctionComponent = () => {
 
   return (
     <header className={styles.header}>
-      <h1 className={styles.header__title}>blog</h1>
-      <span className={styles.header__color} onClick={onColorModeChange}>
-        {colorModeIcon}
-      </span>
+      <div className={styles.header__wrap}>
+        <h1 className={styles.header__title}>blog</h1>
+        <span className={styles.header__color} onClick={onColorModeChange}>
+          {colorModeIcon}
+        </span>
+      </div>
       <nav className={styles.header__navigation}>
         <a
           aria-label="Discord"
