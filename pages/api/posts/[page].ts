@@ -25,11 +25,7 @@ export default async function handler(
             _id: -1,
           });
 
-        const normalizedPosts = posts.map(({ categories, date, post }) => ({
-          categories: categories,
-          date: date,
-          post,
-        }));
+        const normalizedPosts = posts.map(({ date, post }) => ({ date, post }));
 
         res.status(200).json({ success: true, data: normalizedPosts });
       } catch (error) {
