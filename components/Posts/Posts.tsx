@@ -30,11 +30,10 @@ const Posts: FunctionComponent = () => {
   return (
     <>
       <div className={styles.posts}>
-        {loading ? (
-          <Loader />
-        ) : (
-          context.posts.map((post, index) => <Post key={index} {...post} />)
-        )}
+        {loading && <Loader />}
+        {context.posts.map((post, index) => (
+          <Post key={index} {...post} />
+        ))}
       </div>
       <hr className={styles.horizontal} ref={containerRef} />
     </>
