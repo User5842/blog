@@ -1,10 +1,6 @@
 import mongoose from "mongoose";
 
 const PostSchema = new mongoose.Schema({
-  categories: {
-    required: true,
-    type: Array,
-  },
   date: {
     required: true,
     type: String,
