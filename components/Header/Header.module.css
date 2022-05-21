@@ -2,12 +2,24 @@
   align-items: center;
   border-bottom: 3px solid #ebebeb;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   padding: 1rem 0;
 }
 
+.header__wrap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
 .header__title {
   margin: 0;
+}
+
+.header__color {
+  cursor: pointer;
 }
 
 .header__navigation {
@@ -26,7 +38,8 @@
 }
 
 .header__navigation a:hover {
-  background-color: #ebebeb;
+  background-color: var(--header-navigation-background-hover);
+  color: black;
   cursor: pointer;
 }
 
@@ -35,5 +48,9 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .header__wrap {
+    width: 100%;
   }
 }
