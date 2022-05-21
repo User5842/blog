@@ -15,9 +15,9 @@ type JSONResponse = {
 const Posts: FunctionComponent = () => {
   const context = useContext(BlogContext);
 
-  const [loading, setLoading] = useState(false);
-
   const [containerRef] = useIntersection(context);
+
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
