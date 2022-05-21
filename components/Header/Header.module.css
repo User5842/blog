@@ -2,12 +2,18 @@
   align-items: center;
   border-bottom: 3px solid #ebebeb;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   padding: 1rem 0;
 }
 
 .header__title {
+  flex: 1;
   margin: 0;
+}
+
+.header__color {
+  cursor: pointer;
 }
 
 .header__navigation {
