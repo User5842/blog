@@ -32,7 +32,8 @@
 }
 
 .header__navigation a:hover {
-  background-color: #ebebeb;
+  background-color: var(--header-navigation-background-hover);
+  color: black;
   cursor: pointer;
 }
 

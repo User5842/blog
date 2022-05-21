@@ -2,8 +2,8 @@ import { createContext, FunctionComponent, useState } from "react";
 import { IPost } from "../interfaces/IPost";
 
 export enum ColorMode {
-  DARK,
-  LIGHT,
+  DARK = "dark",
+  LIGHT = "light",
 }
 
 export type BlogContextType = {

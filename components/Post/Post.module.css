@@ -1,5 +1,9 @@
 .post__date {
-  color: #9eabb3;
+  color: var(--color-date);
+}
+
+.post a {
+  color: var(--hyperlink-color);
 }
 
 .post h1 {
@@ -12,7 +16,7 @@
 }
 
 .post pre {
-  background-color: rgb(242, 242, 242);
+  background-color: var(--background-pre);
 }
 
 .post pre code {
@@ -26,7 +30,7 @@
 }
 
 .post blockquote {
-  background: #f9f9f9;
+  background-color: var(--background-blockquote);
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;

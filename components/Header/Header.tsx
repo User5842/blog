@@ -1,12 +1,18 @@
-import { FunctionComponent, useContext } from "react";
-import BlogContext, { ColorMode } from "../../store/store";
+import { FunctionComponent, useContext, useEffect } from "react";
 
 import styles from "./Header.module.css";
+
+import BlogContext, { ColorMode } from "../../store/store";
 
 const Header: FunctionComponent = () => {
   const context = useContext(BlogContext);
 
   const colorModeIcon = context.colorMode === ColorMode.LIGHT ? "💡" : "🌙";
+
+  useEffect(() => {
+    const rootComponent = document.getElementById("__next");
+    rootComponent?.setAttribute("data-theme", context.colorMode);
+  }, [context.colorMode]);
 
   const onColorModeChange = () => {
     context.colorMode === ColorMode.LIGHT
