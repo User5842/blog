@@ -11,6 +11,7 @@
   --background-scroll: #f5f5f5;
   --color: unset;
   --color-date: #9eabb3;
+  --header-background-color: white;
   --header-navigation-background-hover: #ebebeb;
   --hyperlink-color: unset;
 }
@@ -22,6 +23,7 @@
   --background-scroll: white;
   --color: white;
   --color-date: white;
+  --header-background-color: unset;
   --header-navigation-background-hover: white;
   --hyperlink-color: rgb(255 255 149);
 }
